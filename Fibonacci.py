@@ -3,7 +3,6 @@
 a = 0
 b = 1
 count = 0
-
 # Print first two numbers in the sequence.
 print(a)
 print(b)
