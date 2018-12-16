@@ -1,14 +1,18 @@
 // Print the first 100 numbers in the Fibonacci sequence.
 
+import java.math.BigInteger;
+
 public class Fibonacci {
 
     public static void main(String[] args) {
-
-        double a = 0, b = 1;
-        System.out.println(a + "\n" + b);
-        // 0 and 1 are the first two numbers in the sequence, 98 more need to be generated.
+        // First two numbers of the sequence are 0 and 1.
+        BigInteger a = BigInteger.ZERO;
+        BigInteger b = BigInteger.ONE;
+        System.out.println(a);
+        System.out.println(b);
+        // Calculate and print the next 98 numbers in the sequence.
         for (int count = 0; count < 98; count++) {
-            double sum = a + b;
+            BigInteger sum = a.add(b);
             System.out.println(sum);
             a = b;
             b = sum;
